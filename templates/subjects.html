@@ -1,0 +1,39 @@
+{% extends 'layout.html'%}
+
+{%block body%}
+
+
+<h1>Subjects</h1>
+<u1 class="list-group list-group-horizontal">
+{% for subject in subjects %}
+    <li class="list-group-item"><a href="{{subject}}">{{subject}}</a></li>
+    
+{%endfor%}
+</u1>
+
+
+
+
+
+<!--
+<p>
+<table>
+<tr>
+<td>
+<img src='data:image/png;base64,{{graph1}}'></img>
+</td></tr>
+
+</table>
+</p>
+
+
+-->
+
+
+
+  
+{%endblock%}  
+
+<div>{{name1}}</div>
+<div><img src='data:image/png;base64,{{graph1}}'></img></div>
+
